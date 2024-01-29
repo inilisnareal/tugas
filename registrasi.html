@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi Perpustakaan</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 10px 0;
+            text-align: left;
+            margin-bottom: 500px;
+            margin-right: 600px;
+        }
+
+        header img {
+            max-width: 100px;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            flex: 1;
+            max-width: 400px;
+        }
+        .registration-image img{
+            max-width: 200px;
+            display: block;
+            margin-top: 20px;
+            float: right;
+        }
+
+        .right img {
+        width: 70%;
+        height: 50%;
+    }
+
+    .right img {
+    width: 280px;
+    height: 50%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 10px;
+}
+       
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #efc0c0;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .login-link a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="process_registration.php" method="post">
+        <h2>Form Registrasi Perpustakaan</h2>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required placeholder="Masukkan Nama Anda">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Masukkan Email Anda">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"required placeholder="Masukkan Password Anda">
+
+        <label for="konfirmasi_password"> konfirmasi Password</label>
+        <input type="password" id="konfirmasi_password" name="konfirmasi_password" required>
+
+        <label for="nis"> NIS</label>
+        <input type="nis" id="nis" name="nis" required>
+
+        <button type="button" class="btn btn-primary btn-block" onclick="validateLogi()">Login</button>
+        <div class="text-center mt-3">
+
+
+        <div class="login-link">
+            <p>Sudah punya akun?<a href="login.php">Login disini</a></p>
+        </div>
+
+        <div class="registration-image">
+            <img src="gambar login.jpeg" alt="Registration Image">
+        </div>
+    </div>
+</body>
+</html>
